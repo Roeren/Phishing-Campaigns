@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ragnar ser deg…</title>
+  <title>Heisann</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,20 +21,22 @@
     p {
       margin-bottom: 0.5em;
     }
+    button {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
-  <button onclick="document.getElementById('sadAudio').play()" style="margin-top: 20px; font-size: 18px;">🎵 Spill av lyd</button>
-<audio id="sadAudio">
-  <source src="sad_hamster.mp3" type="audio/mpeg">
-</audio>
-
-
-  <!-- 🎵 Autoplay sad hamster musikk -->
-  <audio autoplay>
-    <source src="sad_hamster.mp3" type="audio/mpeg">
-    Nettleseren din støtter ikke lyd.
-  </audio>
 
   <h1>Ragnar ser deg…</h1>
   <p>Du trykket på en lenke i en simulert phishing-epost.</p>
@@ -44,6 +46,12 @@
   <img src="PhishingHamster.jpg" alt="Phishing Hamster" />
 
   <p style="margin-top: 30px;">Dette var en simulering i regi av Ragnar-avdelingen – du er trygg 😔</p>
+
+  <button onclick="document.getElementById('sadAudio').play()">🎵 Spill av lyd</button>
+  <audio id="sadAudio">
+    <source src="sad_hamster.mp3" type="audio/mpeg">
+    Nettleseren din støtter ikke lyd.
+  </audio>
 
 </body>
 </html>
